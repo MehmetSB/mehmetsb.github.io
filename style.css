@@ -57,10 +57,10 @@ a:visited{
 
 
 section{
-    background: rgba(30, 54, 74, 0.8);
-    width: 600px;
-    margin: 0 auto;
-    margin-top: 10px;
+  background: rgba(30, 54, 74, 0.8);
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
 h2{
@@ -103,7 +103,7 @@ p{
   }
 
   .dropbtn {
-    position: fixed;
+    position: absolute;
     top: 0px !important;
     left: 0px !important;
     background-color: black;
