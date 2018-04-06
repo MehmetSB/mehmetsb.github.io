@@ -6,6 +6,7 @@
 
 .head{
   background-image:url("../img/header-background.png");
+  position: absolute;
   background-size: cover;
   width: 100%;
   height: 55px;
@@ -57,41 +58,53 @@ a:visited{
 
 
 section{
-    background: rgba(30, 54, 74, 0.8);
-    width: 600px;
-    margin: 0 auto;
-    margin-top: 10px;
+  background: rgba(0, 4, 4, 0.6);
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: silver;
+  border-radius: 25px;
 }
 
 h2{
+  margin-top: 10px;
+  margin-bottom: 5px;
   color: white;
   opacity: 1.0;
 }
 p{
   color: white;
+  margin-bottom: 5px;
 }
 
-@media screen and (max-width: 1000px) {
+.meme, .ik{
+  margin-bottom: 7px;
+}
+
+@media screen and (max-width: 1020px) {
     body {
           background-image: url("grfx/background.png");
           background-repeat: repeat;
     }
 }
 
-@media screen and (min-width: 455px) {
+@media screen and (min-width:  1021px) {
       .dropbtn {
         display: none;
       }
     }
 
-@media screen and (max-width: 645px) {
+
+@media screen and (max-width: 1020px) {
   body {
     background-image: url("grfx/background.png");
     background-repeat: repeat-y;
   }
 
   section{
-    width: 400px;
+    width: 350px;
   }
 
   li {
@@ -104,13 +117,15 @@ p{
 
   .dropbtn {
     position: fixed;
-    top: 0px !important;
-    left: 0px !important;
+    width: 30%;
+    z-index: 9999;
+    margin-top: 0px;
+    top: 0;
+    left: 0;
     background-color: black;
     color: white;
     padding: 16px;
     font-size: 18px;
-    border: none;
     cursor: pointer;
   }
 
@@ -124,7 +139,7 @@ p{
     position: fixed;
     top: 0px !important;
     left: 0px !important;
-    position: relative;
+    position: fixed;
     display: inline-block;
   }
 
@@ -155,5 +170,4 @@ p{
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {
     display: block;}
-  }
 }
