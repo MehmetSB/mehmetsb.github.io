@@ -117,7 +117,7 @@ p{
 
   .dropbtn {
     position: static;
-    width: 30%;
+    width: 100%;
     z-index: 9999;
     margin-top: 0px;
     top: 0;
